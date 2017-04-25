@@ -1,0 +1,22 @@
+<div class="form-container">
+	<form>
+    	<div class="dropdown">
+    		<input type="text" class="form-input" ng-keyup="keyupevt($event)"  ng-model="pickup" placeholder="Enter a city or local area">
+        	<ul class="list-container" ng-if="showList">
+        		<li ng-click="selectPickupPoint(item)" ng-repeat="item in (locations | filter:search)" ng-bind="item"></li>
+        	</ul>
+    	</div>
+        <!-- <div class="dropdown">
+            <input type="text" class="form-input" ng-keyup="keyupevt($event)"  ng-model="dropoff" placeholder="Enter a city or local area">
+            <ul class="list-container" ng-if="showList && dropoff.length">
+                <li ng-click="selectItem(item)" ng-repeat="item in (locations | filter:search)" ng-bind="item"></li>
+            </ul>
+        </div> -->
+    	<!-- <div class="dropdown">
+    		<input type="text" class="form-input" ng-keyup="event=$event" ng-model="key1" placeholder="Enter a city or local area">
+        	<ul ng-if="event.keyCode" class="list-container">
+        		<li ng-repeat="item in (items | filter:search)" ng-bind="item"></li>
+        	</ul>
+    	</div> -->
+    </form>
+</div>

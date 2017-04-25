@@ -1,0 +1,12 @@
+{
+  "name": "busticketbooking",
+  "description": "Angular app to book online tickets",
+  "version": "1.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "angularfire": "^2.3.0"
+  }
+}

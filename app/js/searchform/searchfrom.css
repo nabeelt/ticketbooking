@@ -1,0 +1,36 @@
+h1 {
+	text-align: center;
+	color: #7d7d7d;
+}
+.form-container {
+	width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 75px;
+}
+.form-input {
+	width: 100%;
+    border: 0.75px solid #606060;
+    padding: 15px;
+    outline: none;
+    max-width: 370px;
+    font-size: 14px;
+}
+.dropdown {
+	margin-bottom: 20px;
+}
+
+.list-container {
+    max-width: 400px;
+    text-align: left;
+    margin: 0 auto;
+    border: 1px solid #d5d5d5;
+}
+.list-container li {
+	list-style: none;
+	padding: 10px;
+}
+
+.list-container li:hover {
+	background-color: #d5d5d5; 
+}

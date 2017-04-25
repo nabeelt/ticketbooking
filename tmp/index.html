@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ticketBooking">
+<head>
+	<title>Online ticket booking</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <!-- inject:css -->
+  	<link rel="stylesheet" href="../app/js/header/header.css">
+  	<link rel="stylesheet" href="../app/js/searchform/searchfrom.css">
+  	<link rel="stylesheet" href="../bower_components/angular-input-dropdown/inputDropdownStyles.css">
+  	<!-- endinject -->
+</head>
+<body>
+	<header-main></header-main>
+	<h1>Online Bus Ticket Booking</h1>
+	<search-form></search-form>
+<!-- inject:js -->
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../bower_components/angular-input-dropdown/inputDropdown.js"></script>
+<script src="../bower_components/angularfire/dist/angularfire.js"></script>
+<script src="../app/js/header/header.module.js"></script>
+<script src="../app/js/header/header.component.js"></script>
+<script src="../app/js/searchform/searchform.module.js"></script>
+<script src="../app/js/searchform/searchform.service.js"></script>
+<script src="../app/js/searchform/searchform.component.js"></script>
+<script src="../app/js/app.module.js"></script>
+<!-- endinject -->
+
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZzViWkm8UDE_ScZXWKndvo-b_gICBEfA",
+    authDomain: "ticketbooking-845cd.firebaseapp.com",
+    databaseURL: "https://ticketbooking-845cd.firebaseio.com",
+    projectId: "ticketbooking-845cd",
+    storageBucket: "ticketbooking-845cd.appspot.com",
+    messagingSenderId: "902347186678"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
